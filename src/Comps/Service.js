@@ -17,6 +17,7 @@ const ServiceHeading = styled(Typography)({
   fontWeight: 700,
   fontSize: '2.5rem',
   marginBottom: '40px',
+  textAlign:'center'
 });
 
 const ServiceCard = styled(Card)({
@@ -55,7 +56,7 @@ const services = [
 const Service = () => {
   return (
     <ServiceSection>
-      <ServiceHeading variant="h2">Our Services</ServiceHeading>
+      <ServiceHeading variant="h1">Our Services</ServiceHeading>
       <Grid container spacing={4} justifyContent="center">
         {services.map((service, index) => (
           <Grid item key={index}>
