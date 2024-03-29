@@ -11,8 +11,13 @@ import { Link } from 'react-router-dom'; // Import Link from react-router-dom
         const StyledAppBar = styled(AppBar)({
   background: 'linear-gradient(to right, #1b1b1b, #343434)',
   color: '#fff',
-  borderBottom: '2px solid #4CAF50',
-  boxShadow: 'none',
+  boxShadow: '0 8px 16px rgba(0,0,0,0.3)',
+  transition: 'transform 0.3s ease',
+  '&:hover': {
+    transform: 'scale(1.02)',
+  },
+  height:'15vh',
+
   
           });
 

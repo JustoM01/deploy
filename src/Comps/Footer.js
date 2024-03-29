@@ -8,8 +8,14 @@ const FooterContainer = styled(Box)({
   color: '#FFFFFF',
   padding: '40px 20px',
   textAlign: 'center',
+  
 
 });
+
+
+
+
+
 
 
 const ContactForm = styled('form')({
@@ -46,9 +52,9 @@ const ContactForm = styled('form')({
 const Footer = () => {
   return (
     <FooterContainer>
-      <Typography variant="body1">Connect with us:</Typography>
+      <Typography variant="h5">Connect with us:</Typography>
       {/* Social media icons */}
-      <IconButton color="inherit" component={Link} href="https://facebook.com" target="_blank">
+      <IconButton  color="inherit"  component={Link} href="https://facebook.com" target="_blank">
         <Facebook />
       </IconButton>
       <IconButton color="inherit" component={Link} href="https://twitter.com" target="_blank">
@@ -60,14 +66,14 @@ const Footer = () => {
 
 
       <ContactForm >
-        <Typography variant="h6" gutterBottom>Contact Us</Typography>
+        <Typography variant="h4" gutterBottom>Contact Us</Typography>
         <input type="text" placeholder="Name" required />
         <input type="email" placeholder="Email" required />
         <textarea placeholder="Message" required />
         <button type="submit" style={{ backgroundColor: 'green', color: 'white', padding: '10px 20px', borderRadius: '5px', marginTop: '10px' }}>Send</button>
       </ContactForm>
 
-      <Typography variant="body2" component="p" style={{ marginTop: '20px', color:'green' }}>
+      <Typography variant="h7" component="p" style={{ marginTop: '20px', color:'green' }}>
         © 2024 My Barbershop. All rights reserved.
       </Typography>
     </FooterContainer>

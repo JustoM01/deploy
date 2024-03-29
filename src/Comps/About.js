@@ -8,29 +8,30 @@ const AboutSection = styled(Box)({
   py: 8,
 });
 
+
+const AboutHeader = styled(Typography)({
+  fontFamily: 'Raleway'
+})
+
 const About = () => {
   return (
     <AboutSection>
       <Container>
         <Grid container spacing={4} alignItems="center">
           <Grid item xs={12} md={6}>
-            <Typography variant="h2" component="h2" color="green" gutterBottom>
+            <AboutHeader variant="h2" component="h2" color="green" gutterBottom>
               About Us
-            </Typography>
+            </AboutHeader>
             <Typography variant="h5" gutterBottom>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor libero quis eros
-              vestibulum, ut hendrerit urna placerat. Integer nec tortor quis est vehicula congue
-              at ac felis. Praesent ultricies odio quis metus pharetra, non bibendum ex feugiat.
-            </Typography>
-            <Typography variant="h5" gutterBottom>
-              Fusce id tortor quis urna tincidunt sollicitudin. Curabitur id fermentum libero, non
-              congue risus. In hac habitasse platea dictumst. Nunc et tortor non velit commodo
-              interdum sed nec sem. Vestibulum ut consequat justo. Sed et nisi nec ante laoreet
-              bibendum. Donec quis diam purus. Cras vehicula ligula sit amet commodo dignissim.
-            </Typography>
+  Welcome to our barbershop, where style meets precision. Our experienced barbers are dedicated to providing you with top-notch grooming services tailored to your unique preferences. Whether you're looking for a classic cut or a modern style, we've got you covered.
+</Typography>
+<Typography variant="h5" gutterBottom>
+  At our barbershop, we pride ourselves on attention to detail and customer satisfaction. From beard trims to hot towel shaves, our skilled barbers will ensure you leave looking and feeling your best. Sit back, relax, and enjoy the ultimate grooming experience in our welcoming and comfortable atmosphere.
+</Typography>
+
           </Grid>
           <Grid item xs={12} md={6}>
-            <img src={about} alt="About Us" style={{ width: '100%', borderRadius: 8, height:'' }} />
+            <img src={about} alt="About Us" style={{ width: '100%', borderRadius: 8, height:'500px' }} />
           </Grid>
         </Grid>
       </Container>
