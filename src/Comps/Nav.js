@@ -1,24 +1,32 @@
 import React from 'react';
-import { AppBar, Toolbar, IconButton, Typography, Button, Menu, MenuItem, Hidden, styled } from '@mui/material';
+import { AppBar, Toolbar, IconButton,  Button, Menu, MenuItem, Hidden, styled } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import HomeIcon from '@mui/icons-material/Home';
 import InfoIcon from '@mui/icons-material/Info';
 import EventIcon from '@mui/icons-material/Event'; // Import BookingIcon;
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+const logo = require('./utils/logo.png')
 // Styled components for enhanced styling
 // Styled components for enhanced styling
 // Styled components for enhanced styling
+
+
+const LogoImage = styled('img')({
+  maxHeight: '100%',
+  marginRight: '20px',
+});
+
+
         const StyledAppBar = styled(AppBar)({
   background: 'linear-gradient(to right, #1b1b1b, #343434)',
   color: '#fff',
   boxShadow: '0 8px 16px rgba(0,0,0,0.3)',
-  transition: 'transform 0.3s ease',
-  '&:hover': {
-    transform: 'scale(1.02)',
-  },
-  height:'15vh',
+  position:'fixed',
+  top: 0, // keeps it at the top 
+  zIndex: 1000, // Sets a  z-index to ensure it's above other content
 
-  
+  height:'13vh',
+
           });
 
          const MenuIconButton = styled(IconButton)({
@@ -56,9 +64,7 @@ const Navbar = () => {
           </MenuIconButton>
         </Hidden>
 
-        <Typography variant="h5" component="div" sx={{ flexGrow: 1, fontFamily: 'Raleway', letterSpacing: '2px', fontWeight: 600 }}>
-          My Barbershop
-        </Typography>
+    <LogoImage src={logo}  alt='logo'></LogoImage>
          {/* menu that shows on big screens */}
                   {/* menu that shows on big screens */}
                            {/* menu that shows on big screens */}

@@ -6,7 +6,7 @@ const HeroSection = styled(Box)({
   background: 'linear-gradient(to right, #1b1b1b, #343434)',
   color: '#FFFFFF',
   textAlign: 'center',
-  padding: '100px 0',
+  padding: 'calc(13vh + 20px) 0 100px', // Adds  padding-top to accommodate the fixed navbar height i have to change according to nav vh
   minHeight: '500px',
 
 

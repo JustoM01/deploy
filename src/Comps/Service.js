@@ -1,10 +1,13 @@
 import React from 'react';
-import { Box, Typography, Grid, Card, CardContent, CardMedia,  styled } from '@mui/material';
+import { Box, Typography, Grid, Card, CardContent, CardMedia, Link, styled } from '@mui/material';
 
 import hero1 from './utils/hero1.jpg'; 
 import hero2 from './utils/hero2.jpg'; 
 import hero3 from './utils/hero3.jpg'; 
 
+// Styled components for enhanced styling
+
+// Styled components for enhanced styling
 // Styled components for enhanced styling
 const ServiceSection = styled(Box)({
   background: 'linear-gradient(to right, #1b1b1b, #343434)',
@@ -19,6 +22,17 @@ const ServiceHeading = styled(Typography)({
   marginBottom: '40px',
   textAlign:'center'
 });
+
+
+
+const StyledLink = styled(Link)({
+  color: 'lightblue', 
+  textDecoration: 'none', // Removez underline
+  '&:hover': {
+    textDecoration: 'underline', // Underlines on hover
+  },
+});
+
 
 const ServiceCard = styled(Card)({
   maxWidth: 345,
@@ -58,6 +72,10 @@ const Service = () => {
     <ServiceSection>
       <ServiceHeading variant="h1">Our Services</ServiceHeading>
       <Grid container spacing={4} justifyContent="center">
+
+        {/* maps through service object array and makes a card with data it retrieves */}
+        {/* maps through service object array and makes a card with data it retrieves */}
+        {/* maps through service object array and makes a card with data it retrieves */}
         {services.map((service, index) => (
           <Grid item key={index}>
             <ServiceCard>
@@ -69,6 +87,7 @@ const Service = () => {
                 <Typography variant="body2" color="WHITE">
                   {service.description}
                 </Typography>
+                <StyledLink component="button">Book</StyledLink>
               </ServiceCardContent>
             </ServiceCard>
           </Grid>
