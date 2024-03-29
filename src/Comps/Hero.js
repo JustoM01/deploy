@@ -1,14 +1,14 @@
 import { Box, Typography, Button, styled } from '@mui/material';
 import { Link } from 'react-router-dom';
-
+// my styling for main comp
 const HeroSection = styled(Box)({
   position: 'relative',
   background: 'linear-gradient(to right, #1b1b1b, #343434)',
   color: '#FFFFFF',
   textAlign: 'center',
-  padding: 'calc(13vh + 20px) 0 100px', // Adds  padding-top to accommodate the fixed navbar height i have to change according to nav vh
-  minHeight: '500px',
 
+  minHeight: '500px',
+ 
 
 });
 
@@ -17,9 +17,8 @@ const HeroHeading = styled(Typography)({
   fontWeight: 700,
   fontSize: '3.5rem',
   letterSpacing: '1px',
-  marginBottom: '20px',
-  textShadow: '2px 2px 4px rgba(0, 0, 0, 0.4)',
  
+  textShadow: '2px 2px 4px rgba(0, 0, 0, 0.4)',
  color:'white'
 });
 

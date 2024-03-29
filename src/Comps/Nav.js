@@ -12,7 +12,7 @@ const logo = require('./utils/logo.png')
 
 
 const LogoImage = styled('img')({
-  maxHeight: '100%',
+ height:'100%',
   marginRight: '20px',
 });
 
@@ -20,14 +20,11 @@ const LogoImage = styled('img')({
         const StyledAppBar = styled(AppBar)({
   background: 'linear-gradient(to right, #1b1b1b, #343434)',
   color: '#fff',
-  boxShadow: '0 8px 16px rgba(0,0,0,0.3)',
-  position:'fixed',
-  top: 0, // keeps it at the top 
-  zIndex: 1000, // Sets a  z-index to ensure it's above other content
+  position: 'fixed',
+  top: 0,
+  height: '140px',
 
-  height:'13vh',
-
-          });
+ });
 
          const MenuIconButton = styled(IconButton)({
         color: '#fff',

@@ -5,20 +5,25 @@ import { Person, Email, Phone, DateRange, AccessTime } from '@mui/icons-material
 // Styled Container component with custom styles
 const StyledContainer = styled(Container)({
   backgroundColor: '#f9f9f9',
-  padding: '40px',
   border: '1px solid #ddd',
   boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
   maxWidth: '600px',
   margin: 'auto',
-  marginTop: '20px',
-  marginBottom: '60px'
+  marginTop:'150px',
+ marginBottom:'20px'
+  
+ 
+
+  
+
+
 });
 
 const BookingPage = () => {
   return (
     <>
       <StyledContainer>
-        <Typography variant="h2" gutterBottom>
+        <Typography style={{fontFamily:'Raleway'}} variant="h2" gutterBottom>
           Book a Haircut
         </Typography>
         <form>
@@ -47,7 +52,7 @@ const BookingPage = () => {
             </Select>
           </FormControl>
 
-          <Button type="submit" variant="contained" style={{ backgroundColor: 'green' }}>Book Appointment</Button>
+          <Button type="submit" variant="contained" style={{ backgroundColor: 'green', marginBottom:'14px' }}>Book Appointment</Button>
         </form>
       </StyledContainer>
     </>

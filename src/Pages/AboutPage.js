@@ -5,7 +5,10 @@ import { Box, Typography, styled } from '@mui/material';
 const AboutSection = styled(Box)({
   background: 'linear-gradient(to right, #1b1b1b, #343434)',
   color: '#FFFFFF',
-  padding: '80px 0',
+  paddingTop:'20px',
+  paddingBottom:'20px',
+  marginTop:'140px'
+ 
 });
 
 const AboutHeading = styled(Typography)({
