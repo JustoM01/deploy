@@ -5,9 +5,8 @@ import ServicesSection from '../Comps/Service';
 import Gallery from '../Comps/Gallery';
 import { Box,  styled } from '@mui/material';
 const Landing = styled(Box)({
-zIndex:1,
-marginTop:'140PX',
-position:'sticky'
+
+
 });
 const LandingPage = () => {
   return (

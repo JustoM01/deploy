@@ -7,7 +7,7 @@ const AboutSection = styled(Box)({
   color: '#FFFFFF',
   paddingTop:'20px',
   paddingBottom:'20px',
-  marginTop:'140px'
+  
  
 });
 

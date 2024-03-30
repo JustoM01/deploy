@@ -20,15 +20,10 @@ const LogoImage = styled('img')({
         const StyledAppBar = styled(AppBar)({
   background: 'linear-gradient(to right, #1b1b1b, #343434)',
   color: '#fff',
-  
-  position: 'fixed',
+  position: 'sticky',
   top: 0,
-  zIndex: 1000, // Ensure a high z-index to keep the navigation bar above other content
-  height: '140px',
-
-
-  
-
+zIndex:1000,
+  height: '110px',
           });
 
          const MenuIconButton = styled(IconButton)({

@@ -9,7 +9,6 @@ const FooterContainer = styled(Box)({
   padding: '40px 20px',
   textAlign: 'center',
 
- 
 
 });
 

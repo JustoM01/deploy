@@ -9,8 +9,9 @@ const StyledContainer = styled(Container)({
   boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
   maxWidth: '600px',
   margin: 'auto',
-  marginTop:'150px',
- marginBottom:'20px'
+
+ marginBottom:'20px',
+ marginTop:'10px'
   
  
 
